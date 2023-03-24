@@ -22,7 +22,7 @@ namespace DataStructureProblems.PrimeNumbersRange
                     }
                 }
                 if (count == 0 && i != 1)
-                    Console.WriteLine("{0} is Prime number", i);
+                    Console.WriteLine(i + " is Prime number");
             }
         }
     }
