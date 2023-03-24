@@ -1,4 +1,5 @@
-﻿using DataStructureProblems.BinarySearchProblem;
+﻿using DataStructureProblems.AnagramProblem;
+using DataStructureProblems.BinarySearchProblem;
 using DataStructureProblems.BubbleSortProblem;
 using DataStructureProblems.InsertionSortProblem;
 using System;
@@ -12,7 +13,7 @@ namespace DataStructureProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Anagram \n5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -29,6 +30,10 @@ namespace DataStructureProblems
                         bubbleSort.ReadFile(@"D:\BridgeLabz\DataStructureProblems\DataStructureProblems\BubbleSortProblem\FileInteger.txt");
                         break;
                     case 4:
+                        Anagram anagram = new Anagram();
+                        anagram.CheckAnagram();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
