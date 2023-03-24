@@ -29,11 +29,7 @@ namespace DataStructureProblems.InsertionSortProblem
                     }                   
                 }
                 Console.Write(words[i]+" ");               
-            }
-            /*foreach (var data in words)
-            {
-                Console.Write(data + " ");
-            }*/
+            }           
         }       
     }
 }
