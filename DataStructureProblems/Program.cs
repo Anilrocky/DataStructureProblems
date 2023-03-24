@@ -2,6 +2,7 @@
 using DataStructureProblems.BinarySearchProblem;
 using DataStructureProblems.BubbleSortProblem;
 using DataStructureProblems.InsertionSortProblem;
+using DataStructureProblems.PrimeNumbersRange;
 using System;
 namespace DataStructureProblems
 {
@@ -13,7 +14,7 @@ namespace DataStructureProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Anagram \n5.Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Anagram \n5.Prime numbers in range 0-1000 \n6.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -34,6 +35,10 @@ namespace DataStructureProblems
                         anagram.CheckAnagram();
                         break;
                     case 5:
+                        PrimeRange range = new PrimeRange();
+                        range.PrimeNumbers();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
