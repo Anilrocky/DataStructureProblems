@@ -10,8 +10,9 @@ namespace DataStructureProblems.AnagramProblem
     {
         public void CheckAnagram()
         {
-            Console.WriteLine("Enter words to check for anagram");
+            Console.WriteLine("Enter first word");
             string word1 = Console.ReadLine();
+            Console.WriteLine("Enter second word");
             string word2 = Console.ReadLine();
             if (word1.Length != word2.Length)
             {
@@ -21,10 +22,10 @@ namespace DataStructureProblems.AnagramProblem
             {
                 char[] chars1 = word1.ToCharArray();
                 Array.Sort(chars1);
-                word1 = chars1.ToString();
+                word1 = new string(chars1 );
                 char[] chars2 = word2.ToCharArray();
                 Array.Sort(chars2);
-                word2 = chars2.ToString();
+                word2 = new string(chars2);
                 if (word1 == word2)
                 {
                     Console.WriteLine("Given words are anagram");
