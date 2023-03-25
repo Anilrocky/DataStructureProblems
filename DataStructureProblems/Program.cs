@@ -1,6 +1,7 @@
 ﻿using DataStructureProblems.AnagramProblem;
 using DataStructureProblems.BinarySearchProblem;
 using DataStructureProblems.BubbleSortProblem;
+using DataStructureProblems.CustomizeStringMessage;
 using DataStructureProblems.InsertionSortProblem;
 using DataStructureProblems.PrimeNumbersRange;
 using System;
@@ -14,7 +15,7 @@ namespace DataStructureProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Anagram \n5.Prime numbers in range 0-1000 \n6.Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Anagram \n5.Prime numbers in range 0-1000 \n6.Customize string message \n7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -39,6 +40,10 @@ namespace DataStructureProblems
                         range.PrimeNumbers();
                         break;
                     case 6:
+                        CustomizeString customize = new CustomizeString();
+                        customize.Customize();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
