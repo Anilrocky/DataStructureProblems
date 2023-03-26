@@ -7,6 +7,7 @@ using DataStructureProblems.InsertionSortProblem;
 using DataStructureProblems.MergeSortProblem;
 using DataStructureProblems.OrderedListProblem;
 using DataStructureProblems.PrimeNumbersRange;
+using DataStructureProblems.PrimePalindromeAnagram;
 using DataStructureProblems.UnOrderedList;
 using System;
 namespace DataStructureProblems
@@ -20,7 +21,7 @@ namespace DataStructureProblems
             while (flag)
             {
                 Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Anagram \n5.Prime numbers in range 0-1000 \n6.Customize string message \n7.Unordered list " +
-                    "\n8.Ordered list \n9.Simple Banking Cash Counter \n10.Merge Sort \n11.Exit");
+                    "\n8.Ordered list \n9.Simple Banking Cash Counter \n10.Merge Sort \n11.Prime numbers that are palindrome,Anagram \n12.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -65,6 +66,10 @@ namespace DataStructureProblems
                         mergeSort.ReadFile(@"D:\BridgeLabz\DataStructureProblems\DataStructureProblems\MergeSortProblem\File.txt");
                         break;
                     case 11:
+                        PrimePalindrome palindrome = new PrimePalindrome();
+                        palindrome.CheckPrime();
+                        break;
+                    case 12:
                         flag = false;
                         break;
                 }
