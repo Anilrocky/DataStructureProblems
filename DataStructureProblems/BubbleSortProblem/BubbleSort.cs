@@ -35,7 +35,7 @@ namespace DataStructureProblems.BubbleSortProblem
             }
             foreach (var data in arr)
             {
-                Console.WriteLine(data+" ");
+                Console.Write(data+" ");
             }
         }
     }
