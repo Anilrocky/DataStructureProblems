@@ -31,8 +31,11 @@ namespace DataStructureProblems.BubbleSortProblem
                         arr[i] = arr[j];
                         arr[j] = temp;
                     }
-                }
-                Console.Write(arr[i]+" ");
+                }               
+            }
+            foreach (var data in arr)
+            {
+                Console.Write(data+" ");
             }
         }
     }
