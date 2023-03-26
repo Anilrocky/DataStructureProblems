@@ -27,9 +27,12 @@ namespace DataStructureProblems.InsertionSortProblem
                         words[i] = words[j];
                         words[j] = temp;
                     }                   
-                }
-                Console.Write(words[i]+" ");               
-            }           
+                }                              
+            }
+            foreach (var data in words)
+            {
+                Console.Write(data+" ");
+            }
         }       
     }
 }
