@@ -1,4 +1,5 @@
 ﻿using DataStructureProblems.AnagramProblem;
+using DataStructureProblems.BalancedParenthesesProblem;
 using DataStructureProblems.BankingCashCounterProblem;
 using DataStructureProblems.BinarySearchProblem;
 using DataStructureProblems.BubbleSortProblem;
@@ -19,7 +20,7 @@ namespace DataStructureProblems
             while (flag)
             {
                 Console.WriteLine("\nChoose option to perform \n1.Binary search \n2.Insertion sort \n3.Bubble sort \n4.Anagram \n5.Prime numbers in range 0-1000 \n6.Customize string message \n7.Unordered list " +
-                    "\n8.Ordered list \n9.Simple Banking Cash Counter \n10.Exit");
+                    "\n8.Ordered list \n9.Simple Banking Cash Counter \n10.Simple Balanced Parentheses \n11.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -60,6 +61,10 @@ namespace DataStructureProblems
                         counter.Operation();
                         break;
                     case 10:
+                        BalancedOperation operation = new BalancedOperation();
+                        operation.ReadFile(@"D:\BridgeLabz\DataStructureProblems\DataStructureProblems\BalancedParenthesesProblem\IntegerFile.txt");
+                        break;
+                    case 11:
                         flag = false;
                         break;
                 }
